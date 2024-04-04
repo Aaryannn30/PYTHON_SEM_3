@@ -31,10 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'contentAggregator',
-    'news',
-    'tech',
-    'stocks',
+    #Mention App/Pages Name to have Migration/Parsing/Fetching
+    'contentAggregator', #for Main/default
+    'news', #for news Page
+    'tech', #for tech page
+    'stocks', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -58,7 +59,7 @@ ROOT_URLCONF = 'contentAggregator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [], #directory file for templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,7 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+#Address for Static files (css,js,html)
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]

@@ -16,6 +16,7 @@ Including another URLconf
 from django.urls import path, include
 from . import views
 
+#including website/app urls to default/main url file
 urlpatterns = [
     path('', views.index),
     path('news/', include('news.urls')),

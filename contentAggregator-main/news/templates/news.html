@@ -84,7 +84,8 @@
                 <center>
                     <section class="wrapper container-fluid mb-5" id="{{site.name}}">
                         <h3 class="section-head mt-5">
-                            <a href="{{site.url}}" class="site-link" target="_blank">{{site.name}} - Latest News:</a>
+                            <!-- Usage of Jinja Pattern/Code for Dynamic Content -->
+                            <a href="{{site.url}}" class="site-link" target="_blank">{{site.name}} - Latest News:</a> 
                         </h3>
                         <div>
                             {% for news in site.news_list %}

@@ -24,12 +24,12 @@ def get_news(rss):
         data = {'heading': entry.title, 'summary': desc, 'date': published.day, 'month': published.month, 'publish_date': published, 'url': entry.link}
         news.append(data)
     return news
+    
 
-
-def index(request):
+def index(request): #gets request from client side to access index/home page
     sites = []
     chk_boxes = []
-    if request.method == ' POST':
+    if request.method == 'POST':
         for site in __sites:
             isChecked = ''
             if request.POST.get(site.short_name + '-news-chkbox'):

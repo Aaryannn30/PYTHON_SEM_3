@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Content Aggregator</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/pre-loader.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <style>
+        body {
+            background-image: url("{% static 'images/bg.png' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .jumbotron {
+            margin-top: 170px;
+            font-size: 60px;
+            color: white;
+            word-spacing: 20px;
+            font-weight: bold;
+            letter-spacing: 7px;
+            text-align: center;
+        }
+
+        .desc {
+            letter-spacing: 2px;
+            color: whitesmoke;
+            text-align: center;
+            width: 100vw;
+        }
+
+        button {
+            letter-spacing: 2px;
+            width: 200px;
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100vw;
+            height: 50px;
+            color: whitesmoke;
+            text-align: center;
+            background-color: #171717;
+        }
+
+        footer p {
+            letter-spacing: 2px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--CSS Spinner-->
+    <div class="pre-loader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        CONTENT AGGREGATOR
+    </div>
+    <div class="desc m-0">
+        View aggregated content from various sites in a single place.<br>
+    </div>
+    <div class="container mt-5">
+        <center>
+            <a href="news/"><button class="btn btn-success ms-2 me-2">News</button></a>
+            <a href="tech/"><button class="btn btn-success ms-2 me-2">Programming</button></a>
+            <!-- <a href="stocks/"><button class="btn btn-success ms-2 me-2">Stocks</button></a> -->
+            <a disabled title="API Unavailable"><button class="btn btn-success ms-2 me-2" disabled>Stocks</button></a>
+        </center>
+    </div>       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

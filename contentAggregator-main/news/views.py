@@ -5,7 +5,6 @@ from news import __sites
 
 
 def get_news(rss):
-
     feed = feedparser.parse(rss)
     news = []
     for entry in feed['entries'][:6]:

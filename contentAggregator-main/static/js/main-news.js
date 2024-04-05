@@ -6,3 +6,4 @@ window.onload = function() {
     });
     // document.querySelector('.pre-loader').remove();
 };
+

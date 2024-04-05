@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'contentAggregator', #for Main/default
     'news', #for news Page
     'tech', #for tech page
-    'stocks', 
+    'stocks', #initiallly dissabled
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
